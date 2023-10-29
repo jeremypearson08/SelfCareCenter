@@ -4,6 +4,9 @@ var affirmationRadio = document.querySelector('.affirmation-container');
 var mantraRadio = document.querySelector('.mantra-container');
 var resultsContainer = document.querySelector('.results-container');
 
+// Disable the "Receive Message" button by default
+receiveMessageBtn.disabled = true;
+
 //Event Listeners
 receiveMessageBtn.addEventListener('click', displayRandomMessage);
 
