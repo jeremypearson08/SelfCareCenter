@@ -3,12 +3,14 @@ var receiveMessageBtn = document.querySelector('.receive-button');
 var affirmationRadio = document.querySelector('.affirmation-container');
 var mantraRadio = document.querySelector('.mantra-container');
 var resultsContainer = document.querySelector('.results-container');
+var clearButton = document.getElementById('clear-button');
 
 // Disable the "Receive Message" button by default
 receiveMessageBtn.disabled = true;
 
 //Event Listeners
 receiveMessageBtn.addEventListener('click', displayRandomMessage);
+clearButton.addEventListener('click', clearMessage);
 
 //Event Handlers and Functions
 function getRandomIndex(array) {
@@ -34,3 +36,10 @@ function getRandomIndex(array) {
         hide(meditationSymbol);  
         }
     }
+
+    function clearMessage() {
+        resultsContainer.innerHTML = '';
+        show(meditationSymbol);
+        show(receiveMessageBtn);
+        hide(clearButton);
+      }
