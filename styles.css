@@ -35,10 +35,11 @@ body {
   }
   
   .choice-container {
+  padding: 10px;
   background-color: #ffffff;
   justify-content: space-evenly;
-  width: 500px;
-  height: 75px;
+  width: 600px;
+  height: 100px;
   border-radius: 12px;
   margin: 30px;
   text-align: center;
@@ -47,15 +48,17 @@ body {
 }
 
   .radio-container {
+    height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
   .results-container {
+    display: flex;
+    justify-content: center;
     background-color: #ffffff;
-    justify-content: space-evenly;
-    width: 650px;
+    width: 700px;
     height: 75px;
     border-radius: 12px;
     margin: 30px;
@@ -78,6 +81,7 @@ body {
 
   #meditate {
     height: 60px;
+    display: block;
   }
 /* font-family: 'Quicksand', sans-serif;
 COLORS
